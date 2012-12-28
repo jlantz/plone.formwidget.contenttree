@@ -180,7 +180,7 @@ class PathSource(object):
     # brain. These will get hidden in the display templates
     def _placeholderTerm(self, value):
         return SimpleTerm(str(value),
-                          token='#error-missing-' + value,
+                          token='#error-missing-%s' % value,
                           title=u"Hidden or missing item '%s'" % value)
 
 
